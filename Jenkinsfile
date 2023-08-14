@@ -21,7 +21,6 @@ pipeline {
                 script {
                     for (instance in env.VM_GROUP) {
                         echo "Copying HTML file to $instance..."
-                        sshCommand remote: instance, user: env.VM_USER, password: env.VM_PASS, command: "sudo mkdir -p ${env.DEST_PATH}"
                         scpToRemote(remote: instance, user: env.VM_USER, password: env.VM_PASS, source: env.HTML_FILE, destination: "${instance}:${env.DEST_PATH}/index.html")
                     }
                 }

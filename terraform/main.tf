@@ -1,6 +1,5 @@
 provider "google" {
-  project     = "halogen-plasma-393310"
+  credentials = file("C:/Challenge Zetta/devops-project-395513-d9a02d50198b.json")
+  project     = "devops-project-395513"
   region      = "europe-west3"
-  credentials = file("C:/Task Sportal/halogen-plasma-393310-e57da3b92a77.json")
 }
-

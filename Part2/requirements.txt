@@ -1,0 +1,10 @@
+# Function dependencies, for example:
+# package>=version
+psycopg2-binary
+google-api-python-client
+google-cloud-secret-manager
+google-cloud-compute
+
+sqlalchemy
+pg8000
+cloud-sql-python-connector
